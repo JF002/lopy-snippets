@@ -96,7 +96,8 @@ class DS18X20:
             return (temp_msb << 8 | temp_lsb) / 16
         else:
             assert False
-
+            
+#sys.path.insert(0, '/flash/DS18B20')
 # import ds18x20, machine
 # temp = ds18x20.DS18X20(machine.Pin('G22',machine.Pin.OPEN_DRAIN, machine.Pin.PULL_UP))
 # temp.read_temp()
